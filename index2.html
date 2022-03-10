@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money manager</title>
+    <!-- logo  -->
+    <link rel="shortcut icon" href="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaP1gKflvZR_HqIb374CqgVAtmDNNlpm5iVauOgVuAc_-OYuxY" type="image/x-icon">
+
+    <!-- style css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    
+<!--  header part started here  -->
+
+<header>
+    <h1 class="text-center mt-4" id="header-name">Money Manager <span><img width="5%" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaP1gKflvZR_HqIb374CqgVAtmDNNlpm5iVauOgVuAc_-OYuxY" alt=""></span></h1>
+    <marquee width="100%" direction="left" height="100px" id="marquee">Here you can calculate your monthly expense, and after month bank balance.
+    </marquee>
+</header>
+
+
+<!--  main part start here -->
+
+<main class="container mt-4" >
+
+    <div class="row d-flex">
+        <div class="col-lg-6">
+            <img class="img-fluid" src="https://images.unsplash.com/photo-1547341074-c5e9b0f9c335?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80" alt="dollar with a bank and some coins on a white table" alt="">
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center">
+            <div>
+                <h2 class="fw-bold" >Incomes</h1>
+                <div class="input-group flex-nowrap">
+
+                    <span class="input-group-text" id="addon-wrapping">Income </span>
+
+                    <input type="number" class="form-control" placeholder="your total income amount" id="income-input" aria-label="Username" aria-describedby="addon-wrapping">
+                  </div>
+                 <!-- income amount end here  -->
+
+                 <br> <br> 
+                 <h2 class="fw-bold">Expenses</h2> 
+
+                 <!-- expense amount  strated from here -->
+                 <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">Food </span>
+
+                    <input type="number" class="form-control" placeholder="Type your Food cost" id="food-cost" aria-label="Username" aria-describedby="addon-wrapping">
+                  </div> <br>
+                 <!-- food input end here  -->
+
+                 <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">Rent </span>
+
+                    <input type="number" class="form-control" placeholder="Type your Rent Cost" id="rent-cost" aria-label="Username" aria-describedby="addon-wrapping">
+                  </div> <br>
+                  <!-- rent input end here -->
+
+                  <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">Clothes </span>
+
+                    <input type="number" class="form-control" placeholder="Type Your Clothes Cost" id="clothes-cost" aria-label="Username" aria-describedby="addon-wrapping">
+                  </div> <br>
+                <!-- cloths input end here  -->
+
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">Others </span>
+
+                    <input type="number" class="form-control" placeholder="Type Your Others Cost" id="others-cost" aria-label="Username" aria-describedby="addon-wrapping">
+                  </div> <br>
+                  <!-- others input end here  -->
+
+
+                    <button  type="button" id="calculate-button" class="btn btn-outline-success btn fw-bold "> Calculate </button> 
+                    <!-- calculate button end here -->
+
+                    <h4 class="fw-bold mt-4"> Your Total Expenses :  <span id="expense-amount"> 0 </span> </h4>
+                    <h4 class="fw-bold"> Your Balance : <span id="balance-amount">  0</span> </h4>
+                    <!--  amount show part end here -->
+
+                    <!-- saving section starts here  -->
+                    <div class="col-lg-6">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping"> Saving </span>
+                                <input type="number" class="form-control" id="saving-input" placeholder="put your saving amount perchant" aria-label="Username" aria-describedby="addon-wrapping"> 
+                              </div> <br>
+
+                              <button  type="button" id="saving-button" class="btn btn-outline-success btn fw-bold "> Calculate </button> 
+                              <h3 class="fw-bold mt-2">Saving Amount :<span id="save-amount"> 0 </span></h3>
+                       
+                              <div class="remaining-blnc">
+                                <h3 class="fw-bold">Remaining Balance :<span id="remaining-balance"> 0 </span></h3>
+                                </div>
+                </div>
+            </div>
+            <!--  amount calculation part end here -->
+              
+        </div>
+    </div>
+
+</main>
+
+<hr class="mt-5"> 
+
+
+
+
+
+
+
+<!--  bootstrap / javascript cdn link below -->
+
+    <!-- bootstrap  -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+    <!-- javascript link -->
+    <script src="main.js"></script>
+
+</body>
+</html>

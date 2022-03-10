@@ -67,7 +67,7 @@ function updatePrice(itemId, price) {
         const total = document.getElementById("total-price");
         total.innerText = totalPrice;
 }
-const fakeCode = "pHero"
+const fakeCode = "arnobtarafder"
 
     document.getElementById("apply-button").addEventListener("click", function() {
         const code = document.getElementById("promo-input").value;
